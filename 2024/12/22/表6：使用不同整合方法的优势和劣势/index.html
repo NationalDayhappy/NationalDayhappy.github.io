@@ -1,0 +1,425 @@
+
+
+  <!DOCTYPE html>
+  <html lang="zh-CN">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content=嘿，我是Arabella～这是我的记录学习和生活的地方，网址刚开始搭建，十分简陋，但是欢迎访问！ >
+  <meta name="keywords" content=study,life >
+
+  <head>
+    <title>
+      记录学习和日常 [ 糖果的碎碎念 ]
+    </title>
+  <meta name="generator" content="Hexo 7.2.0"></head>
+
+  <body>
+
+    <link rel="stylesheet" href="/css/header.css">
+<div class="header">
+  <div class="logo">
+    <span class="pull-left">
+      <a id="site-name" href="/">
+        Arabella&#39;s blog
+      </a>
+    </span>
+  </div>
+  <ul class="nav-list">
+    
+      <li>
+        <a href="/">
+          首页
+        </a>
+      </li>
+      
+      <li>
+        <a href="/about">
+          关于
+        </a>
+      </li>
+      
+  </ul>
+</div>
+
+      <!--<link rel="stylesheet" href="/css/top-header.css">
+<div id="top-bar" class="fixed">
+
+  <a class="goto-top" href="#"></a>
+  <ul class="bar-list bar-list-1">
+    
+      <li>
+        <p>
+          <a href="/">
+            <text class="bar-text bar-p1">
+              首页
+            </text>
+            <text class="bar-text bar-p2"></text>
+          </a>
+          <text class="bar-p3">/</text>
+        </p>
+      </li>
+      
+      <li>
+        <p>
+          <a href="/about">
+            <text class="bar-text bar-p1">
+              关于
+            </text>
+            <text class="bar-text bar-p2"></text>
+          </a>
+          <text class="bar-p3">/</text>
+        </p>
+      </li>
+      
+  </ul>
+</div>-->
+
+        <div id="content-outer">
+          <div class="content-inner">
+            <link rel="stylesheet" href="/css/post.css">
+<div class="posts">
+  <a href="/index.html"><i class="fa fa-home
+replay-btn" aria-hidden="true"></i></a>
+  <div class="post-title">
+    <p>
+      
+    </p>
+    <hr>
+  </div>
+  <div class="post-content">
+    <p>当然，以下是对文献中表6的翻译：</p>
+<h3 id="表6：使用不同整合方法的优势和劣势"><a href="#表6：使用不同整合方法的优势和劣势" class="headerlink" title="表6：使用不同整合方法的优势和劣势"></a>表6：使用不同整合方法的优势和劣势</h3><table>
+<thead>
+<tr>
+<th>整合方法</th>
+<th>优势</th>
+<th>劣势</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基于连接的</td>
+<td>- 简单直接<br>- 可以使用传统的监督和无监督方法<br>- 可以平等地使用所有组学数据<br>- 可以选择最有区分力的特征</td>
+<td>- 需要所有组学数据对所有患者<br>- 需要适当的归一化<br>- 不考虑每个组学的独特分布<br>- 当连接矩阵大时，内存和计算密集</td>
+</tr>
+<tr>
+<td>基于模型的</td>
+<td>- 有助于理解不同组学之间的相互作用<br>- 可以使用来自不同患者组的数据，只要表型相同<br>- 不增加维度复杂性</td>
+<td>- 如果组学数据极其异质，可能效果不佳<br>- 可能导致过拟合<br>- 可能丢失弱信号</td>
+</tr>
+<tr>
+<td>基于转换的</td>
+<td>- 图形表示易于理解，计算上不那么密集<br>- 核方法提供优越的性能</td>
+<td>- 核方法比图形方法计算更密集<br>- 转换有时可能具有挑战性</td>
+</tr>
+</tbody></table>
+<p>根据您提供的文件内容，表7可能包含了多组学整合方法的分类。以下是对表7的翻译：</p>
+<h3 id="表7：多组学整合方法概述"><a href="#表7：多组学整合方法概述" class="headerlink" title="表7：多组学整合方法概述"></a>表7：多组学整合方法概述</h3><table>
+<thead>
+<tr>
+<th>整合方法类型</th>
+<th>描述</th>
+<th>监督学习应用</th>
+<th>无监督学习应用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基于连接（Concatenation-based）</td>
+<td>将不同组学数据集合并成一个大的数据矩阵，然后使用这个矩阵进行分析。</td>
+<td>用于构建预测模型，如分类和回归。</td>
+<td>用于聚类分析，发现数据中的内在结构。</td>
+</tr>
+<tr>
+<td>基于模型（Model-based）</td>
+<td>为每种组学数据建立独立模型，然后将这些模型整合以提高预测能力。</td>
+<td>用于构建更精确的预测模型，如疾病预后。</td>
+<td>用于数据聚类，发现数据中的模式。</td>
+</tr>
+<tr>
+<td>基于转换（Transformation-based）</td>
+<td>将每个组学数据转换为图形或核矩阵，然后整合这些转换后的数据。</td>
+<td>用于提高分类器的性能，如支持向量机。</td>
+<td>用于聚类和关联分析，如网络融合。</td>
+</tr>
+</tbody></table>
+<p>请注意，这个表格是基于您提供的文件内容的概述进行翻译的。如果表7中包含了更详细的信息或者有特定的方法名称，您可能需要提供更详细的内容，以便我能够提供更准确的翻译。</p>
+<p>为了将表格内容合理地分配到两张PPT幻灯片中，我们可以将研究案例分为两组，并在每张幻灯片中展示。以下是拆分后的表格内容：</p>
+<h3 id="幻灯片1：多组学研究案例与方法-第一部分"><a href="#幻灯片1：多组学研究案例与方法-第一部分" class="headerlink" title="幻灯片1：多组学研究案例与方法 - 第一部分"></a>幻灯片1：多组学研究案例与方法 - 第一部分</h3><table>
+<thead>
+<tr>
+<th>研究案例</th>
+<th>数据整合类型</th>
+<th>应用的方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>年龄相关研究</td>
+<td>基因组学、转录组学、蛋白质组学、代谢组学</td>
+<td>图形随机森林（Graphical Random Forest）</td>
+</tr>
+<tr>
+<td>急性髓性白血病</td>
+<td>基因组学、转录组学、DNA甲基化</td>
+<td>LASSO</td>
+</tr>
+<tr>
+<td>抗癌治疗反应</td>
+<td>基因组学、转录组学、拷贝数变异</td>
+<td>随机森林（Random Forest）、支持向量机（SVM）</td>
+</tr>
+<tr>
+<td>脑癌研究</td>
+<td>基因组学、转录组学、DNA甲基化、拷贝数变异、微RNA</td>
+<td>LASSO、JIVE、iClusterBayes、SNF</td>
+</tr>
+<tr>
+<td>乳腺癌研究</td>
+<td>基因组学、转录组学、DNA甲基化</td>
+<td>随机森林、支持向量机、LASSO</td>
+</tr>
+<tr>
+<td>癌症生存分析</td>
+<td>基因组学、转录组学、拷贝数变异</td>
+<td>支持向量机、随机森林</td>
+</tr>
+<tr>
+<td>癌症预后</td>
+<td>基因组学、转录组学、拷贝数变异</td>
+<td>LASSO、PSDF、GONEC</td>
+</tr>
+</tbody></table>
+<h3 id="幻灯片2：多组学研究案例与方法-第二部分"><a href="#幻灯片2：多组学研究案例与方法-第二部分" class="headerlink" title="幻灯片2：多组学研究案例与方法 - 第二部分"></a>幻灯片2：多组学研究案例与方法 - 第二部分</h3><table>
+<thead>
+<tr>
+<th>研究案例</th>
+<th>数据整合类型</th>
+<th>应用的方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>癌症药物反应</td>
+<td>基因组学、转录组学、拷贝数变异</td>
+<td>MOLI</td>
+</tr>
+<tr>
+<td>心脏组织老化</td>
+<td>基因组学、拷贝数变异</td>
+<td>随机森林</td>
+</tr>
+<tr>
+<td>COVID-19分析</td>
+<td>代谢组学、蛋白质组学、脂质组学</td>
+<td>PLS-DA、Extra Trees</td>
+</tr>
+<tr>
+<td>慢性淋巴细胞性白血病</td>
+<td>基因组学、转录组学、DNA甲基化</td>
+<td>MOFA</td>
+</tr>
+<tr>
+<td>胃癌研究</td>
+<td>基因组学、转录组学、蛋白质组学</td>
+<td>支持向量机、随机森林</td>
+</tr>
+<tr>
+<td>肾癌研究</td>
+<td>基因组学、转录组学、拷贝数变异、蛋白质组学</td>
+<td>iClusterBayes、PAMOGK</td>
+</tr>
+<tr>
+<td>肝癌研究</td>
+<td>基因组学、转录组学、蛋白质组学</td>
+<td>自编码器、支持向量机、朴素贝叶斯</td>
+</tr>
+<tr>
+<td>肺癌研究</td>
+<td>转录组学、基因组学</td>
+<td>iCluster</td>
+</tr>
+<tr>
+<td>神经母细胞瘤研究</td>
+<td>基因组学、转录组学、拷贝数变异、微RNA</td>
+<td>自编码器、支持向量机、朴素贝叶斯</td>
+</tr>
+<tr>
+<td>卵巢癌研究</td>
+<td>基因组学、转录组学、DNA甲基化</td>
+<td>随机森林</td>
+</tr>
+<tr>
+<td>口腔鳞状细胞癌</td>
+<td>长非编码RNA、微RNA、基因表达</td>
+<td>支持向量机</td>
+</tr>
+<tr>
+<td>泛癌分析</td>
+<td>基因组学、转录组学、蛋白质组学、拷贝数变异</td>
+<td>iCluster+、MoCluster、LRAcluster、XGBoost、随机森林</td>
+</tr>
+<tr>
+<td>马铃薯肉质颜色研究</td>
+<td>基因组学、转录组学、DNA甲基化、拷贝数变异</td>
+<td>随机森林</td>
+</tr>
+<tr>
+<td>狗心脏疾病研究</td>
+<td>基因组学、转录组学</td>
+<td>随机森林</td>
+</tr>
+</tbody></table>
+<p>这种分配方式确保了每张幻灯片的信息量均衡，并且便于观众理解和记忆。在实际的PPT设计中，您可以根据需要调整布局和视觉元素，如颜色、图表和图标，以提高幻灯片的吸引力和信息传达的效率。</p>
+<p>根据您的要求，我将重新分配内容，使得第一个表格包含从“年龄相关研究”到“胃癌研究”的案例，而第二个表格包含剩余的案例。以下是拆分后的两个表格内容：</p>
+<h3 id="幻灯片1：多组学研究案例与方法-第一部分-1"><a href="#幻灯片1：多组学研究案例与方法-第一部分-1" class="headerlink" title="幻灯片1：多组学研究案例与方法 - 第一部分"></a>幻灯片1：多组学研究案例与方法 - 第一部分</h3><table>
+<thead>
+<tr>
+<th>研究案例</th>
+<th>数据整合类型</th>
+<th>应用的方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>年龄相关研究</td>
+<td>基因组学、转录组学、蛋白质组学、代谢组学</td>
+<td>图形随机森林（Graphical Random Forest）</td>
+</tr>
+<tr>
+<td>急性髓性白血病</td>
+<td>基因组学、转录组学、DNA甲基化</td>
+<td>LASSO</td>
+</tr>
+<tr>
+<td>抗癌治疗反应</td>
+<td>基因组学、转录组学、拷贝数变异</td>
+<td>随机森林（Random Forest）、支持向量机（SVM）</td>
+</tr>
+<tr>
+<td>脑癌研究</td>
+<td>基因组学、转录组学、DNA甲基化、拷贝数变异、微RNA</td>
+<td>LASSO、JIVE、iClusterBayes、SNF</td>
+</tr>
+<tr>
+<td>乳腺癌研究</td>
+<td>基因组学、转录组学、DNA甲基化</td>
+<td>随机森林、支持向量机、LASSO</td>
+</tr>
+<tr>
+<td>癌症生存分析</td>
+<td>基因组学、转录组学、拷贝数变异</td>
+<td>支持向量机、随机森林</td>
+</tr>
+<tr>
+<td>癌症预后</td>
+<td>基因组学、转录组学、拷贝数变异</td>
+<td>LASSO、PSDF、GONEC</td>
+</tr>
+<tr>
+<td>癌症药物反应</td>
+<td>基因组学、转录组学、拷贝数变异</td>
+<td>MOLI</td>
+</tr>
+<tr>
+<td>心脏组织老化</td>
+<td>基因组学、拷贝数变异</td>
+<td>随机森林</td>
+</tr>
+<tr>
+<td>COVID-19分析</td>
+<td>代谢组学、蛋白质组学、脂质组学</td>
+<td>PLS-DA、Extra Trees</td>
+</tr>
+<tr>
+<td>慢性淋巴细胞性白血病</td>
+<td>基因组学、转录组学、DNA甲基化</td>
+<td>MOFA</td>
+</tr>
+<tr>
+<td>胃癌研究</td>
+<td>基因组学、转录组学、蛋白质组学</td>
+<td>支持向量机、随机森林</td>
+</tr>
+</tbody></table>
+<h3 id="幻灯片2：多组学研究案例与方法-第二部分-1"><a href="#幻灯片2：多组学研究案例与方法-第二部分-1" class="headerlink" title="幻灯片2：多组学研究案例与方法 - 第二部分"></a>幻灯片2：多组学研究案例与方法 - 第二部分</h3><table>
+<thead>
+<tr>
+<th>研究案例</th>
+<th>数据整合类型</th>
+<th>应用的方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>肾癌研究</td>
+<td>基因组学、转录组学、拷贝数变异、蛋白质组学</td>
+<td>iClusterBayes、PAMOGK</td>
+</tr>
+<tr>
+<td>肝癌研究</td>
+<td>基因组学、转录组学、蛋白质组学</td>
+<td>自编码器、支持向量机、朴素贝叶斯</td>
+</tr>
+<tr>
+<td>肺癌研究</td>
+<td>转录组学、基因组学</td>
+<td>iCluster</td>
+</tr>
+<tr>
+<td>神经母细胞瘤研究</td>
+<td>基因组学、转录组学、拷贝数变异、微RNA</td>
+<td>自编码器、支持向量机、朴素贝叶斯</td>
+</tr>
+<tr>
+<td>卵巢癌研究</td>
+<td>基因组学、转录组学、DNA甲基化</td>
+<td>随机森林</td>
+</tr>
+<tr>
+<td>口腔鳞状细胞癌</td>
+<td>长非编码RNA、微RNA、基因表达</td>
+<td>支持向量机</td>
+</tr>
+<tr>
+<td>泛癌分析</td>
+<td>基因组学、转录组学、蛋白质组学、拷贝数变异</td>
+<td>iCluster+、MoCluster、LRAcluster、XGBoost、随机森林</td>
+</tr>
+<tr>
+<td>马铃薯肉质颜色研究</td>
+<td>基因组学、转录组学、DNA甲基化、拷贝数变异</td>
+<td>随机森林</td>
+</tr>
+<tr>
+<td>狗心脏疾病研究</td>
+<td>基因组学、转录组学</td>
+<td>随机森林</td>
+</tr>
+</tbody></table>
+<p>这样的分配可以确保每张幻灯片的信息量适中，便于观众理解和记忆。在实际的PPT设计中，您可以根据幻灯片的具体尺寸和内容的复杂性进行适当调整。</p>
+
+  </div>
+  
+</div>
+          </div>
+        </div>
+
+        <link rel="stylesheet" href="/css/footer.css">
+<div class="bottom-outer">
+  <div class="copyright">©2021 - 2021 By Tanger</div>
+  <div class="framework-info">
+    <span>Power by</span>
+    <a class="a1" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    <span class="footer-separator">|</span>
+    <span>Theme by</span>
+    <a class="a2" target="_blank" rel="noopener" href="https://github.com/redhat123456/hexo-theme-MiHoYo">MiHoYo</a>
+  </div>
+</div>
+
+          
+            <!-- scripts list from theme config.yml -->
+            
+              <script src="/js/MiHoYo.js"></script>
+              
+                
+
+  </body>
+
+  </html>
