@@ -1,0 +1,160 @@
+
+
+  <!DOCTYPE html>
+  <html lang="zh-CN">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content=嘿，我是Arabella～这是我的记录学习和生活的地方，网址刚开始搭建，十分简陋，但是欢迎访问！ >
+  <meta name="keywords" content=study,life >
+
+  <head>
+    <title>
+      学习记录笔记：成功安装OpenCV和PyWavelets库 [ 糖果的碎碎念 ]
+    </title>
+  <meta name="generator" content="Hexo 7.2.0"></head>
+
+  <body>
+
+    <link rel="stylesheet" href="/css/header.css">
+<div class="header">
+  <div class="logo">
+    <span class="pull-left">
+      <a id="site-name" href="/">
+        Arabella&#39;s blog
+      </a>
+    </span>
+  </div>
+  <ul class="nav-list">
+    
+      <li>
+        <a href="/">
+          首页
+        </a>
+      </li>
+      
+      <li>
+        <a href="/about">
+          关于
+        </a>
+      </li>
+      
+  </ul>
+</div>
+
+      <!--<link rel="stylesheet" href="/css/top-header.css">
+<div id="top-bar" class="fixed">
+
+  <a class="goto-top" href="#"></a>
+  <ul class="bar-list bar-list-1">
+    
+      <li>
+        <p>
+          <a href="/">
+            <text class="bar-text bar-p1">
+              首页
+            </text>
+            <text class="bar-text bar-p2"></text>
+          </a>
+          <text class="bar-p3">/</text>
+        </p>
+      </li>
+      
+      <li>
+        <p>
+          <a href="/about">
+            <text class="bar-text bar-p1">
+              关于
+            </text>
+            <text class="bar-text bar-p2"></text>
+          </a>
+          <text class="bar-p3">/</text>
+        </p>
+      </li>
+      
+  </ul>
+</div>-->
+
+        <div id="content-outer">
+          <div class="content-inner">
+            <link rel="stylesheet" href="/css/post.css">
+<div class="posts">
+  <a href="/index.html"><i class="fa fa-home
+replay-btn" aria-hidden="true"></i></a>
+  <div class="post-title">
+    <p>
+      学习记录笔记：成功安装OpenCV和PyWavelets库
+    </p>
+    <hr>
+  </div>
+  <div class="post-content">
+    <h2 id="学习记录笔记：成功安装OpenCV和PyWavelets库"><a href="#学习记录笔记：成功安装OpenCV和PyWavelets库" class="headerlink" title="学习记录笔记：成功安装OpenCV和PyWavelets库"></a>学习记录笔记：成功安装OpenCV和PyWavelets库</h2><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>在Python虚拟环境中，需要安装<code>opencv-python</code>和<code>PyWavelets</code>库以进行计算机视觉和信号处理相关的开发工作。</p>
+<h3 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h3><ul>
+<li><strong>操作系统</strong>：Microsoft Windows 10</li>
+<li><strong>Python版本</strong>：Python 3.8</li>
+<li><strong>虚拟环境</strong>：位于<code>D:\pythonProject\venv\</code>目录下</li>
+</ul>
+<h3 id="安装过程"><a href="#安装过程" class="headerlink" title="安装过程"></a>安装过程</h3><h4 id="1-激活虚拟环境"><a href="#1-激活虚拟环境" class="headerlink" title="1. 激活虚拟环境"></a>1. 激活虚拟环境</h4><ul>
+<li>通过命令行进入虚拟环境的Scripts目录，并执行<code>activate.bat</code>文件以激活虚拟环境。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd D:\pythonProject\venv\Scripts</span><br><span class="line">.\activate.bat</span><br></pre></td></tr></table></figure>
+激活后，命令行提示符前缀会显示<code>(venv)</code>，表示虚拟环境已激活。</li>
+</ul>
+<h4 id="2-安装opencv-python"><a href="#2-安装opencv-python" class="headerlink" title="2. 安装opencv-python"></a>2. 安装<code>opencv-python</code></h4><ul>
+<li>首次尝试使用清华大学镜像源安装<code>opencv-python</code>，但由于网络连接超时问题，未能成功。</li>
+<li>切换到官方PyPI源后，成功安装<code>opencv-python</code>库。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install opencv-python -i https://pypi.org/simple</span><br></pre></td></tr></table></figure></li>
+<li>安装过程中，下载了<code>opencv_python-4.10.0.84-cp37-abi3-win_amd64.whl</code>文件，并成功安装。</li>
+</ul>
+<h4 id="3-安装PyWavelets"><a href="#3-安装PyWavelets" class="headerlink" title="3. 安装PyWavelets"></a>3. 安装<code>PyWavelets</code></h4><ul>
+<li>使用官方PyPI源安装<code>PyWavelets</code>库。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install PyWavelets -i https://pypi.org/simple</span><br></pre></td></tr></table></figure></li>
+<li>成功下载并安装了<code>PyWavelets-1.4.1</code>。</li>
+</ul>
+<h3 id="遇到的问题及解决方案"><a href="#遇到的问题及解决方案" class="headerlink" title="遇到的问题及解决方案"></a>遇到的问题及解决方案</h3><h4 id="网络连接超时"><a href="#网络连接超时" class="headerlink" title="网络连接超时"></a>网络连接超时</h4><ul>
+<li>在使用清华大学镜像源时，遇到了连接超时的问题。这可能是由于网络不稳定或镜像源服务器的问题。</li>
+<li><strong>解决方案</strong>：切换到官方PyPI源进行安装。</li>
+</ul>
+<h4 id="权限问题"><a href="#权限问题" class="headerlink" title="权限问题"></a>权限问题</h4><ul>
+<li>在尝试升级pip时，遇到了权限错误，提示需要使用特定路径下的Python解释器来升级。</li>
+<li><strong>解决方案</strong>：按照错误信息提示，使用指定的Python解释器路径执行升级命令。</li>
+</ul>
+<h4 id="无效的Python分布"><a href="#无效的Python分布" class="headerlink" title="无效的Python分布"></a>无效的Python分布</h4><ul>
+<li>在升级pip过程中，出现了关于无效分布<code>-ffi</code>的警告。</li>
+<li><strong>解决方案</strong>：这可能是由于某些包安装不完整或损坏。可以考虑重新安装这些包或忽略这些警告。</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li>成功在Python虚拟环境中安装了<code>opencv-python</code>和<code>PyWavelets</code>库。</li>
+<li>遇到网络连接问题时，切换到官方PyPI源是一个有效的解决方案。</li>
+<li>权限问题和无效的Python分布警告需要根据具体情况采取相应的解决措施。</li>
+</ul>
+<h3 id="后续行动"><a href="#后续行动" class="headerlink" title="后续行动"></a>后续行动</h3><ul>
+<li>考虑定期检查和升级pip以保持最新。</li>
+<li>如果无效的Python分布警告持续出现，可能需要清理环境或重新安装相关包。</li>
+</ul>
+
+  </div>
+  
+</div>
+          </div>
+        </div>
+
+        <link rel="stylesheet" href="/css/footer.css">
+<div class="bottom-outer">
+  <div class="copyright">©2021 - 2021 By Tanger</div>
+  <div class="framework-info">
+    <span>Power by</span>
+    <a class="a1" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>
+    <span class="footer-separator">|</span>
+    <span>Theme by</span>
+    <a class="a2" target="_blank" rel="noopener" href="https://github.com/redhat123456/hexo-theme-MiHoYo">MiHoYo</a>
+  </div>
+</div>
+
+          
+            <!-- scripts list from theme config.yml -->
+            
+              <script src="/js/MiHoYo.js"></script>
+              
+                
+
+  </body>
+
+  </html>
